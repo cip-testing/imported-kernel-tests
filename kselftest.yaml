@@ -28,17 +28,17 @@ params:
 
 # Skip install deps and steps on minimal rootfs from LAVA test
 # Example:
-# "skip_install": "all"
-install:
-    deps:
-        - libpopt-dev
-        - libcap-dev
-        - binutils-dev
-        - perl
-        - wget
-        - tar
-    steps:
-        - './'
+skip_install: all
+# install:
+#     deps:
+#         - libpopt-dev
+#         - libcap-dev
+#         - binutils-dev
+#         - perl
+#         - wget
+#         - tar
+#     steps:
+#         - './'
 
 run:
     steps:
